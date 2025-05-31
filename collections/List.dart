@@ -115,7 +115,16 @@ void main() {
             ? print("${f.friend1} Don't have any Friends")
             : print(f.Friends_same_country()),
   );
+  Set<String> _names = {"Amr", "Amr", "mohamed", "malak", "yara"};
+  _names.forEach((n) => print(n));
+
+  Map<int, String> map = {1: "Amr soliman", 2: "Ebramhim yousef "};
+  map[3] = "Yousef Ali";
+  map.forEach((key, value) => print("Number $key is $value"));
+  map.remove(3);
+  map.forEach((key, value) => print("Number $key is $value"));
 }
+
 
 class Friends {
   String? Name;
